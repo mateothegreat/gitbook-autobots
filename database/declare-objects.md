@@ -2,7 +2,7 @@
 description: Declare our database objects by defining them with classes.
 ---
 
-# Declare Objects
+# Declare Database Entities
 
 ## Setup
 
@@ -41,7 +41,7 @@ MYSQL_DATABASE=<mysql database>
 We need the ability to store users in our database which we can then reference when things happen like recording chat messages, points, etc..
 
 {% code-tabs %}
-{% code-tabs-item title="/src/DB/User.ts" %}
+{% code-tabs-item title="/src/DB/entities/User.ts" %}
 ```typescript
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
@@ -49,19 +49,19 @@ import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from 'typeor
 export class User {
 
     @PrimaryGeneratedColumn()
-    id: number;
+    public id: number;
 
     @CreateDateColumn()
-    createdDate: Date;
+    public createdDate: Date;
 
     @Column()
-    discordUserId: string;
+    public discordUserId: string;
 
     @Column()
-    discordUsername: string;
+    public discordUsername: string;
 
     @Column()
-    discrodDiscriminator: string;
+    public discrodDiscriminator: string;
 
 }
 ```
@@ -73,7 +73,7 @@ export class User {
 Each time a message is received we will log it to the database so we can later perform queries like tracking the number of messages a user has sent for experience points.
 
 {% code-tabs %}
-{% code-tabs-item title="/src/DB/ChatMessage.ts" %}
+{% code-tabs-item title="/src/DB/entities/ChatMessage.ts" %}
 ```typescript
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from 'typeorm';
 import { User }                                                     from './User';
@@ -82,16 +82,16 @@ import { User }                                                     from './User
 export class ChatMessage {
 
     @PrimaryGeneratedColumn()
-    id: number;
+    public id: number;
 
     @Column()
-    user: User;
+    public user: User;
 
     @Column({ type: "blob" })
-    content: string;
+    public content: string;
 
     @Column()
-    channel: string;
+    public channel: string;
 
 }
 

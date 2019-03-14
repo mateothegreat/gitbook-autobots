@@ -13,11 +13,11 @@
 
 ## Database
 
-* [Declare Objects](database/declare-objects.md)
-* [Untitled](database/untitled.md)
+* [Declare Database Entities](database/declare-objects.md)
+* [TypeORM Configuration](database/typeorm-configuration.md)
 
 ## Development
 
-* [Common Classes](development/untitled.md)
-* [Test Command](development/untitled-1.md)
+* [Common Classes](development/common-classes.md)
+* [Test Command](development/test-command.md)
 
