@@ -6,8 +6,22 @@ description: Declare our database objects by defining them with classes.
 
 ## Setup
 
+### Installation
+
+We will use the node.js module [TypeORM](https://typeorm.io) which will provide us with schema and query management.
+
+```text
+npm install typeorm
+```
+
+### Environment Variables
+
+We will store our database configuration properties in a `.env` file which will later allow us to access these values using node's `process.env` object
+
+Create a file named `.env` with the following \(updating the values from our previous step\):
+
 {% code-tabs %}
-{% code-tabs-item title=".env" %}
+{% code-tabs-item title="/.env" %}
 ```typescript
 TOKEN=<your discord bot token>
 OWNER_ID=<your discord user id>
@@ -27,7 +41,7 @@ MYSQL_DATABASE=<mysql database>
 We need the ability to store users in our database which we can then reference when things happen like recording chat messages, points, etc..
 
 {% code-tabs %}
-{% code-tabs-item title="User.ts" %}
+{% code-tabs-item title="/src/DB/User.ts" %}
 ```typescript
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
@@ -59,7 +73,7 @@ export class User {
 Each time a message is received we will log it to the database so we can later perform queries like tracking the number of messages a user has sent for experience points.
 
 {% code-tabs %}
-{% code-tabs-item title="ChatMessage.ts" %}
+{% code-tabs-item title="/src/DB/ChatMessage.ts" %}
 ```typescript
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from 'typeorm';
 import { User }                                                     from './User';
