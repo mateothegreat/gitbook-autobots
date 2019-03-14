@@ -1,22 +1,18 @@
 # Development Environment
 
-## Getting Super Powers
+## Using an IDE
 
-Becoming a super hero is a fairly straight forward process:
+There are several IDE's out there but I highly recommend either [Visual Studio Code](https://code.visualstudio.com/) or [WebStorm](https://www.jetbrains.com/webstorm).
 
-```
-$ give me super-powers
-```
+## Install Node.js
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
+We need to have node.js installed as it is our interpreter. Download node.js and install it from [http://nodejs.org](http://nodejs.org).
 
-Once you're strong enough, save the world:
+Once installed you can open your command prompt to verify \(windows users will need to re-login for the path to take effect\).
 
-```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
+```bash
+$ node -v
+  v10.5.0
 ```
 
 
