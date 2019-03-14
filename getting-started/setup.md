@@ -19,6 +19,7 @@ Make sure you add "**.env**" to your .gitignore file to prevent your token and o
 TOKEN=<your discord bot token>
 OWNER_ID=<your discord user id>
 MYSQL_HOST=<mysql hostname>
+MYSQL_PORT=<mysql port>
 MYSQL_USER=<mysql username>
 MYSQL_PASSWORD=<mysql password>
 MYSQL_DATABASE=<mysql database>

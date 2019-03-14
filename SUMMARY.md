@@ -20,4 +20,5 @@
 
 * [Common Classes](development/common-classes.md)
 * [Test Command](development/test-command.md)
+* [Bootstrapping](development/bootstrapping.md)
 

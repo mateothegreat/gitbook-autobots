@@ -26,10 +26,10 @@ Create a file named `.env` with the following \(updating the values from our pre
 TOKEN=<your discord bot token>
 OWNER_ID=<your discord user id>
 MYSQL_HOST=<mysql hostname>
+MYSQL_PORT=<mysql port>
 MYSQL_USER=<mysql username>
 MYSQL_PASSWORD=<mysql password>
 MYSQL_DATABASE=<mysql database>
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -75,8 +75,8 @@ Each time a message is received we will log it to the database so we can later p
 {% code-tabs %}
 {% code-tabs-item title="/src/DB/entities/ChatMessage.ts" %}
 ```typescript
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from 'typeorm';
-import { User }                                                     from './User';
+import { Column, CreateDateColumn, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { User }                                                                           from './User';
 
 @Entity()
 export class ChatMessage {
@@ -84,7 +84,11 @@ export class ChatMessage {
     @PrimaryGeneratedColumn()
     public id: number;
 
-    @Column()
+    @CreateDateColumn()
+    public stampCreated: Date;
+
+    @OneToOne(type => User)
+    @JoinColumn()
     public user: User;
 
     @Column({ type: "blob" })
@@ -94,7 +98,6 @@ export class ChatMessage {
     public channel: string;
 
 }
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
