@@ -46,6 +46,8 @@ export class CommandConfig {
 
 ### CommandDecorator Class
 
+This class will allow us to "decorate" or "annotate" our Command classes with `@Command`. Classes decorated with this annotation will automatically be loaded and it's configuration analyzed in preparation of receiving messages.
+
 {% code-tabs %}
 {% code-tabs-item title="/src/Common/CommandDecorator.ts" %}
 ```typescript
@@ -62,6 +64,10 @@ export function Command(target: any): any {
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+### CommandParser Class
+
+This class will automatically parse out the command name and argument\(s\) providing a ready means to each. This class will get passed to all Command `run(..)` method calls.
 
 {% code-tabs %}
 {% code-tabs-item title="/src/Common/CommandParser.ts" %}

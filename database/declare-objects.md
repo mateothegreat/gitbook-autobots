@@ -34,9 +34,9 @@ MYSQL_DATABASE=<mysql database>
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-## Declaring Objects
+## Declaring Entities
 
-### User Object
+### User Entity
 
 We need the ability to store users in our database which we can then reference when things happen like recording chat messages, points, etc..
 
@@ -68,7 +68,7 @@ export class User {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-### ChatMessage Object
+### ChatMessage Entity
 
 Each time a message is received we will log it to the database so we can later perform queries like tracking the number of messages a user has sent for experience points.
 

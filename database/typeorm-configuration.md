@@ -1,5 +1,9 @@
 # TypeORM Configuration
 
+## The Database Class
+
+This class is responsible for connecting to our database and maintaining a reference to the connection and can be imported throughout our application.
+
 {% code-tabs %}
 {% code-tabs-item title="/src/DB/DB.ts" %}
 ```typescript
