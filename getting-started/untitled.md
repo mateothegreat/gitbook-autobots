@@ -8,9 +8,17 @@ description: We'll use MySQL as our database engine and configure it.
 
 Download and install MySQL from [https://mysql.com/downloads/installer/](https://mysql.com/downloads/installer/).
 
-Download and install MySQL Workbench from [https://dev.mysql.com/downloads/workbench/](https://dev.mysql.com/downloads/workbench/).
+If you need a GUI you can download and install MySQL Workbench from [https://dev.mysql.com/downloads/workbench/](https://dev.mysql.com/downloads/workbench/).
 
 ## Configuration
+
+### Login to MySQL
+
+We'll open a command prompt and issue the following command:
+
+```typescript
+mysql -u root -p -h 127.0.0.1
+```
 
 ### Create the database
 
@@ -25,4 +33,6 @@ Query OK, 1 row affected (0.07 sec)
 mysql> GRANT ALL PRIVILEGES ON mybot.* TO 'mybotuser'@'localhost' IDENTIFIED BY 'mybotpassword';
 Query OK, 0 rows affected, 2 warnings (0.07 sec)
 ```
+
+
 
