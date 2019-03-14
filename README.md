@@ -1,6 +1,8 @@
+---
+description: Learn how to create your own discord bot using TypeScript.
+---
+
 # Introduction
 
-Learn DevOps by example through specific use cases and demonstration.
-
-![](.gitbook/assets/devops.png)
+![](.gitbook/assets/logo-short-transparent.png)
 
