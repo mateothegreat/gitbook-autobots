@@ -20,11 +20,11 @@
 ## Development
 
 * [Common Classes](development/common-classes.md)
-* [index.ts](development/index.ts.md)
 * [Bootstrapping](development/bootstrapping.md)
 
 ## Example Commands
 
+* [index.ts](example-commands/index.ts.md)
 * [ChannelSetTopicCommand](example-commands/channelsettopiccommand.md)
 * [FlipCommand](example-commands/flipcommand.md)
 * [GuildMemberAddMessageCommand](example-commands/guildmemberaddmessagecommand.md)
