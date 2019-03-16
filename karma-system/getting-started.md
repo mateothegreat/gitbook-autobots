@@ -1,6 +1,6 @@
 # Getting Started
 
-![](../.gitbook/assets/screen-shot-2019-03-16-at-10.38.05-am.png)
+![!leaderboard](../.gitbook/assets/screen-shot-2019-03-16-at-10.38.05-am.png)
 
 Let's create a karma tracking system which will log points for users when they send a message like `thanks @mateothegreat` or `thank you @mateothegreat and @autobot`.
 

@@ -37,6 +37,14 @@
 * [UserUnBanCommand](example-commands/userunbancommand.md)
 * [WikipediaSearchCommand](example-commands/wikipediasearchcommand.md)
 
+## Macro System
+
+* [Getting Started](macro-system/getting-started.md)
+* [MacroAddCommand](macro-system/macroaddcommand.md)
+* [MacroGetCommand](macro-system/macrogetcommand.md)
+* [MacroDeleteCommand](macro-system/macrodeletecommand.md)
+* [MacroListCommand](macro-system/macrolistcommand.md)
+
 ## Karma System
 
 * [Getting Started](karma-system/getting-started.md)
