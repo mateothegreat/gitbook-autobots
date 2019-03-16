@@ -4,6 +4,8 @@ description: Search wikipedia and return an article.
 
 # WikipediaSearchCommand
 
+Install wikijs with `npm install wikijs`first and then add the command below. Don't forget to update `/src/Commands/index.ts`!
+
 {% code-tabs %}
 {% code-tabs-item title="/src/Commands/WikipediaSearchCommand.ts" %}
 ```typescript
