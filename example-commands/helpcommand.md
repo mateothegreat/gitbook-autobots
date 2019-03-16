@@ -4,6 +4,8 @@ description: Displays help information in a direct message.
 
 # HelpCommand
 
+![?help](../.gitbook/assets/screen-shot-2019-03-16-at-9.20.56-am.png)
+
 {% hint style="info" %}
 This command performs role checking and will only send the commands that the user has role\(s\) assigned for, if any.
 {% endhint %}
