@@ -40,29 +40,29 @@ This class configures each parameter that a command expects.
  */
 export class CommandParam {
 
-    //
-    // Name of the command.
-    //
+    /**
+     * Name of the command, i.e.: !ping or >hellow
+     */
     public name: string;
 
-    //
-    // Command description -- used with the help command and during validation error(s) (optional).
-    //
+    /**
+     * Command description -- used with the help command and during validation error(s) (optional).
+     */
     public description?: string;
 
-    //
-    // Determine if this parameter is required (optional).
-    //
+    /**
+     * Determine if this parameter is required (optional).
+     */
     public required?: boolean;
 
-    //
-    // Regular expression pattern for validating this parameter (optional).
-    //
+    /**
+     * Regular expression pattern for validating this parameter (optional).
+     */
     public pattern?: string;
 
-    //
-    // Initial default value (optional).
-    //
+    /**
+     * Initial default value (optional).
+     */
     public value?: string;
 
 }
@@ -78,11 +78,15 @@ This class will be used to map configuration details. For now, we'll only specif
 {% code-tabs-item title="/src/Common/CommandConfig.ts" %}
 ```typescript
 import { CommandParam } from './CommandParam';
+import { Event }        from './Event';
 
 export class CommandConfig {
 
-    public name: string;
+    public event: Event;
+    public name?: string;
+    public description?: string;
     public params?: CommandParam[];
+    public roles?: string[];
 
 }
 ```
@@ -117,26 +121,89 @@ This class will automatically parse out the command name and argument\(s\) provi
 {% code-tabs %}
 {% code-tabs-item title="/src/Common/CommandParser.ts" %}
 ```typescript
-import { Message } from 'discord.js';
+import { GuildMember, Message } from 'discord.js';
+import { CommandArgument }      from './CommandArgument';
 
+export type MESSAGE_TYPE = Message & GuildMember;
+
+/**
+ * Takes in a obj and parses it out into a Command Class Instance.
+ */
 export class CommandParser {
 
+    /**
+     * Name of the command parsed out.
+     */
     public command: string;
-    public arguments: string;
-    public message: Message;
 
-    public constructor(message: Message) {
+    /**
+     * Arguments parsed out between commas.
+     */
+    public arguments: CommandArgument[] = [];
 
-        const matches = message.content.match(/>\s?(\w+)\s+(.*)/);
+    /**
+     * Discord.js Message Object.
+     */
+    public obj: MESSAGE_TYPE;
+
+    /**
+     * @description Class Constructor requiring a Discord.js Message Object.
+     *
+     * @param obj Discord.js object.
+     *
+     */
+    public constructor(obj: MESSAGE_TYPE) {
+
+        //
+        // Match between spaces or to the end if no spaces found.
+        // i.e.: `!ping` or `>test chars=abc,num=123
+        //
+        const matches = obj.content.match(/^(.*?)(?:\s+|$)(.*)/);
 
         if (!!matches && matches.length === 3) {
 
             this.command = matches[ 1 ];
-            this.arguments = matches[ 2 ];
-            this.message = message;
-            
+
+            const split = matches[ 2 ].split(',');
+
+            for (let i = 0; i < split.length; i++) {
+
+                const splitRow = split[ i ].split('=');
+
+                this.arguments.push({
+
+                    name: splitRow[ 0 ],
+                    value: splitRow[ 1 ]
+
+                });
+
+            }
+
         }
 
+        this.obj = obj;
+
+    }
+
+    /**
+     * @description Retrives a parsed argument by it's name.
+     *
+     * @param commandName Name of the argument (name=somecommand).
+     *
+     * @returns CommandArgument CommandArgument or null if not found.
+     *
+     */
+    public getArgumentByName(commandName: string): CommandArgument {
+
+        for (let i = 0; i < this.arguments.length; i++) {
+
+            if (this.arguments[ i ].name === commandName) {
+
+                return this.arguments[ i ];
+
+            }
+
+        }
 
     }
 
