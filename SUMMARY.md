@@ -20,5 +20,7 @@
 
 * [Common Classes](development/common-classes.md)
 * [Test Command](development/test-command.md)
+* [All Messages Command](development/all-messages-command.md)
+* [index.ts](development/index.ts.md)
 * [Bootstrapping](development/bootstrapping.md)
 
