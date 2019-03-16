@@ -1,2 +1,0 @@
-# All Messages Command
-

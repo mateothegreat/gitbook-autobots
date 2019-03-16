@@ -20,8 +20,13 @@
 ## Development
 
 * [Common Classes](development/common-classes.md)
-* [Test Command](development/test-command.md)
-* [All Messages Command](development/all-messages-command.md)
 * [index.ts](development/index.ts.md)
 * [Bootstrapping](development/bootstrapping.md)
+
+## Example Commands
+
+* [GuildMemberAddMessageCommand](example-commands/guildmemberaddmessagecommand.md)
+* [PingCommand](example-commands/pingcommand.md)
+* [RoleRestrictedCommand](example-commands/rolerestrictedcommand.md)
+* [TestCommand](example-commands/test-command.md)
 

@@ -2,7 +2,7 @@
 description: Let's create our first test command!
 ---
 
-# Test Command
+# TestCommand
 
 Commands are made of of a class that extends the `CommandBase` class and has the `@Command` annotation.
 
