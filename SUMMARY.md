@@ -30,5 +30,7 @@
 * [PingCommand](example-commands/pingcommand.md)
 * [RoleRestrictedCommand](example-commands/rolerestrictedcommand.md)
 * [TestCommand](example-commands/test-command.md)
+* [UserBanCommand](example-commands/userbancommand.md)
+* [UserUnBanCommand](example-commands/userunbancommand.md)
 * [WikipediaSearchCommand](example-commands/wikipediasearchcommand.md)
 
