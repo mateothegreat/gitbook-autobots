@@ -4,6 +4,8 @@ description: 'Sets a channel topic. Usage: >topic channel=mychannelname,topic=my
 
 # ChannelSetTopicCommand
 
+![&amp;gt;topic channel=general,topic=Everything is awesome!](../.gitbook/assets/screen-shot-2019-03-16-at-6.46.50-am.png)
+
 {% code-tabs %}
 {% code-tabs-item title="/src/Commands/ChannelSetTopicCommand.ts" %}
 ```typescript

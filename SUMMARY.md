@@ -25,10 +25,10 @@
 
 ## Example Commands
 
+* [ChannelSetTopicCommand](example-commands/channelsettopiccommand.md)
 * [GuildMemberAddMessageCommand](example-commands/guildmemberaddmessagecommand.md)
 * [PingCommand](example-commands/pingcommand.md)
 * [RoleRestrictedCommand](example-commands/rolerestrictedcommand.md)
 * [TestCommand](example-commands/test-command.md)
 * [WikipediaSearchCommand](example-commands/wikipediasearchcommand.md)
-* [ChannelSetTopicCommand](example-commands/channelsettopiccommand.md)
 
