@@ -55,9 +55,12 @@ This class will be used to map configuration details. For now, we'll only specif
 {% code-tabs %}
 {% code-tabs-item title="/src/Common/CommandConfig.ts" %}
 ```typescript
+import { CommandParam } from './CommandParam';
+
 export class CommandConfig {
 
     public name: string;
+    public params?: CommandParam[];
 
 }
 ```
