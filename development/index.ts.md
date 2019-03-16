@@ -1,3 +1,7 @@
+---
+description: The Barrel File
+---
+
 # index.ts
 
 We'll setup an `index.ts` file which will handle all of our exported commands that will be used to load things later.
