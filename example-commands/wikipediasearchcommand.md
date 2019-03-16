@@ -4,6 +4,8 @@ description: Search wikipedia and return an article.
 
 # WikipediaSearchCommand
 
+![](../.gitbook/assets/screen-shot-2019-03-16-at-9.22.04-am.png)
+
 Install wikijs with `npm install wikijs`first and then add the command below. Don't forget to update `/src/Commands/index.ts`!
 
 {% code-tabs %}
