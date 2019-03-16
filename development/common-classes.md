@@ -28,6 +28,26 @@ export class CommandBase {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+### CommandParam Class
+
+This class configures each parameter that a command expects.
+
+{% code-tabs %}
+{% code-tabs-item title="/src/Common/CommandParam.ts" %}
+```typescript
+export class CommandParam {
+
+    public name: string;
+    public description?: string;
+    public required?: boolean;
+    public pattern?: string;
+    public value?: string;
+
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 ### CommandConfig Class
 
 This class will be used to map configuration details. For now, we'll only specify a name property which will be used to map a parsed command string to a specific `Command` class.
