@@ -26,6 +26,7 @@
 ## Example Commands
 
 * [ChannelSetTopicCommand](example-commands/channelsettopiccommand.md)
+* [FlipCommand](example-commands/flipcommand.md)
 * [GuildMemberAddMessageCommand](example-commands/guildmemberaddmessagecommand.md)
 * [PingCommand](example-commands/pingcommand.md)
 * [RoleRestrictedCommand](example-commands/rolerestrictedcommand.md)
