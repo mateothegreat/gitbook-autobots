@@ -34,5 +34,5 @@ mysql> GRANT ALL PRIVILEGES ON mybot.* TO 'mybotuser'@'localhost' IDENTIFIED BY 
 Query OK, 0 rows affected, 2 warnings (0.07 sec)
 ```
 
-
+After starting our bot for the first time the table schemas will be created automatically for us so there are no tables to create at this time.
 
