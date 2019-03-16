@@ -1,5 +1,7 @@
 # Bot Class
 
+This is the meat and potatoes of things, the main Bot Class.
+
 {% code-tabs %}
 {% code-tabs-item title="/src/Common/Bot.ts" %}
 ```typescript
@@ -16,6 +18,7 @@ import { Logger }                      from './Logger';
 // Load .env into process.env
 //
 dotenv.config();
+
 
 class Bot {
 
@@ -114,7 +117,7 @@ class Bot {
     public preCommand(event: Event, parsedCommand: CommandParser): boolean {
 
         const command: CommandBase = this.getCommandByName(parsedCommand.command);
-  
+
         if (command) {
 
             let errors: string[] = [];
@@ -124,8 +127,23 @@ class Bot {
             //
             if (command.config.roles) {
 
+                let roleMatched = false;
+
                 for (let i = 0; i < command.config.roles.length; i++) {
 
+                    if (parsedCommand.obj.member.roles.find(role => role.name === command.config.roles[ i ])) {
+
+                        roleMatched = true;
+
+                        break;
+
+                    }
+
+                }
+
+                if (!roleMatched) {
+
+                    errors.push('You do not have the required role to run this command.');
 
                 }
 
@@ -271,7 +289,6 @@ class Bot {
 }
 
 export const BOT = new Bot();
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
