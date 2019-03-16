@@ -4,7 +4,7 @@ description: Learn how to create your own discord bot using TypeScript by exampl
 
 # Introduction
 
-This is a guide on setting up and deploying a discord bot using [TypeScript](https://typescript.org) and [Discord.js](https://discord.js.org) and is intended for the beginner to intermediate level node.js developer.
+This is a guide on setting up and deploying a discord bot using [TypeScript](https://www.typescriptlang.org/) and [Discord.js](https://discord.js.org) and is intended for the beginner to intermediate level node.js developer.
 
 We use annotations to register commands and comes with argument parsing, argument validation, role validation and more!
 
