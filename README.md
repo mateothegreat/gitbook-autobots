@@ -1,5 +1,5 @@
 ---
-description: Learn how to create your own discord bot using TypeScript.
+description: Learn how to create your own discord bot using TypeScript by example.
 ---
 
 # Introduction
