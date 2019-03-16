@@ -21,6 +21,7 @@ Copy the `.env.sample` file to .env and replace the defaults with your own. Thou
 ### Starting the bot
 
 ```bash
+npm run build
 npm start
 ```
 
