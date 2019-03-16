@@ -36,3 +36,10 @@
 * [UserUnBanCommand](example-commands/userunbancommand.md)
 * [WikipediaSearchCommand](example-commands/wikipediasearchcommand.md)
 
+## Karma System
+
+* [Getting Started](karma-system/getting-started.md)
+* [KarmaPoint Database Entity](karma-system/karmapoint-database-entity.md)
+* [KarmaPointCommand](karma-system/karmapointcommand.md)
+* [KarmaLeaderboardCommand](karma-system/karmaleaderboardcommand.md)
+
