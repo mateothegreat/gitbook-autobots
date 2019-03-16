@@ -212,3 +212,23 @@ export class CommandParser {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+### Logger Class
+
+This will help our logs look fancy.
+
+{% code-tabs %}
+{% code-tabs-item title="/src/Common/Logger.ts" %}
+```typescript
+export class Logger {
+
+    public static log(args: string[] | string) {
+
+        console.log(`${ new Date().toString() }: ${ args }`);
+
+    }
+
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+

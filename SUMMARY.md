@@ -20,6 +20,7 @@
 ## Development
 
 * [Common Classes](development/common-classes.md)
+* [Bot Class](development/bot-class.md)
 * [Bootstrapping](development/bootstrapping.md)
 
 ## Example Commands
