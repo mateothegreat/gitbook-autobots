@@ -1,12 +1,12 @@
 # package.json
 
 {% code-tabs %}
-{% code-tabs-item title="package.json" %}
+{% code-tabs-item title="/package.json" %}
 ```yaml
 {
-    "name": "@ngxui/discord-bot-typescript-autobot",
+    "name": "discord-bot-typescript-autobot",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "dist/index.js",
     "scripts": {
         "build": "tsc",
         "start": "node dist/index.js"
@@ -38,8 +38,8 @@
 
 Now that we have our package.json file setup we can tell node to install the dependencies:
 
-```text
-$ npm install
+```bash
+npm install
 ```
 
 

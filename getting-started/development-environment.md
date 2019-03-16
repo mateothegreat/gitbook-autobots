@@ -1,5 +1,7 @@
 # Development Environment
 
+![WebStorm](../.gitbook/assets/screen-shot-2019-03-16-at-6.48.54-am.png)
+
 ## Using an IDE
 
 There are several IDE's out there but I highly recommend either [Visual Studio Code](https://code.visualstudio.com/) or [WebStorm](https://www.jetbrains.com/webstorm).
