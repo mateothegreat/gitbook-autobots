@@ -4,6 +4,8 @@ description: 'The quick start, TLDR.'
 
 # Quick Start
 
+![?help](.gitbook/assets/screen-shot-2019-03-16-at-9.05.25-pm.png)
+
 This book comes with a complimentary repository. Clone it and run if you want the TLDR!
 
 ### Clone & npm install
