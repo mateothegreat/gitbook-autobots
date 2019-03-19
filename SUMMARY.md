@@ -7,7 +7,7 @@
 
 * [Development Environment](getting-started/development-environment.md)
 * [Setup Discord](getting-started/setup-discord.md)
-* [Database Setup](getting-started/untitled.md)
+* [Database Setup](getting-started/database-setup.md)
 * [package.json](getting-started/package.json.md)
 * [tsconfig.json](getting-started/tsconfig.json.md)
 * [Setup .env](getting-started/setup.md)
@@ -36,6 +36,11 @@
 * [UserBanCommand](example-commands/userbancommand.md)
 * [UserUnBanCommand](example-commands/userunbancommand.md)
 * [WikipediaSearchCommand](example-commands/wikipediasearchcommand.md)
+
+## Projects System
+
+* [Getting Started](projects-system/getting-started.md)
+* [ProjectAddCommand](projects-system/projectaddcommand.md)
 
 ## Macro System
 
