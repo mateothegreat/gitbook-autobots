@@ -41,6 +41,7 @@
 
 * [Getting Started](projects-system/getting-started.md)
 * [ProjectAddCommand](projects-system/projectaddcommand.md)
+* [ProjectGetCommand](projects-system/projectgetcommand.md)
 
 ## Macro System
 
