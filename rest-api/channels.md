@@ -1,8 +1,12 @@
+---
+description: Channel Management & Interaction
+---
+
 # Channels
 
 {% api-method method="get" host="http://localhost:8080" path="/api/channels/" %}
 {% api-method-summary %}
-List Channels
+ List Channels
 {% endapi-method-summary %}
 
 {% api-method-description %}

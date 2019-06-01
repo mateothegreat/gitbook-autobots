@@ -1,5 +1,5 @@
 ---
-description: We'll use MySQL as our database engine and configure it.
+description: Using MySQL as our database engine.
 ---
 
 # Database Setup

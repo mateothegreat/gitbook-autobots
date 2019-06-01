@@ -12,7 +12,7 @@ This is a guide on setting up and deploying a discord bot using the [autobots](h
 
 ## Some Features
 
-* Modular Commands \(use `npm install <command module name`and you're set!\)
+* Modular Commands \(use `npm install <command module name>`and you're set!\)
 * REST API Interface
 * Developed using TypeScript
 * Annotation Driven Design

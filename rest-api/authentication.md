@@ -1,3 +1,7 @@
+---
+description: Authenticating against the API.
+---
+
 # Authentication
 
 {% api-method method="get" host="http://localhost:8080" path="/api/login" %}
