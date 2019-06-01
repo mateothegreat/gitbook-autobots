@@ -20,6 +20,7 @@
 
 * [Authentication](rest-api/authentication.md)
 * [Channels](rest-api/channels.md)
+* [Messages](rest-api/messages.md)
 
 ## Database
 
