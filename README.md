@@ -1,16 +1,23 @@
 ---
-description: Learn how to create your own discord bot using TypeScript by example.
+description: Learn how to create your own discord bot using the autobots framework.
 ---
 
 # Introduction
 
-This is a guide on setting up and deploying a discord bot using [TypeScript](https://www.typescriptlang.org/) and [Discord.js](https://discord.js.org) and is intended for the beginner to intermediate level node.js developer.
+The autobots framework is a set of modular discord bot libraries that support plug-and-play installation and configuration.
 
-We use annotations to register commands and comes with argument parsing, argument validation, role validation and more!
+This is a guide on setting up and deploying a discord bot using the [autobots](https://autobots.rocks) framework and is intended for the beginner to intermediate level node.js developer.
 
 ![Sponsored by autobots.host - free bot hosting platform.](.gitbook/assets/logo-short-transparent.png)
 
-Code documentation can be found at [https://discord-bot-typescript-annotationdriven.matthewdavis.io/](https://discord-bot-typescript-annotationdriven.matthewdavis.io/).
+## Some Features
 
-Git repository can be found at [https://github.com/mateothegreat/discord-bot-typescript-annotationdriven](https://github.com/mateothegreat/discord-bot-typescript-annotationdriven).
+* Modular Commands \(use `npm install <command module name`and you're set!\)
+* REST API Interface
+* Developed using TypeScript
+* Annotation Driven Design
+
+{% hint style="info" %}
+Git repositories can be found at [https://github.com/autobots-rocks](https://github.com/autobots-rocks).
+{% endhint %}
 
