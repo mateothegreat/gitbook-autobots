@@ -12,6 +12,14 @@
 * [package.json](getting-started/package.json.md)
 * [tsconfig.json](getting-started/tsconfig.json.md)
 
+## MODULES
+
+* [Macro System](modules/macro-system.md)
+
+## REST API
+
+* [Authentication](rest-api/authentication.md)
+
 ## Database
 
 * [Declare Database Entities](database/declare-objects.md)
