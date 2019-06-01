@@ -1,12 +1,12 @@
 # Authentication
 
-{% api-method method="get" host="https://localhost" path="/api/login" %}
+{% api-method method="get" host="http://localhost:8080" path="/api/login" %}
 {% api-method-summary %}
 Login
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint will return a JWT token.
+This endpoint will return a JWT token that is required for all other queries.
 {% endapi-method-description %}
 
 {% api-method-spec %}

@@ -19,6 +19,7 @@
 ## REST API
 
 * [Authentication](rest-api/authentication.md)
+* [Channels](rest-api/channels.md)
 
 ## Database
 
