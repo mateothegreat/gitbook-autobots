@@ -14,7 +14,7 @@
 
 ## MODULES
 
-* [Macro System](modules/macro-system.md)
+* [Using & Installing](modules/macro-system.md)
 
 ## REST API
 
