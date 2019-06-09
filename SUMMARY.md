@@ -25,3 +25,7 @@
 * [Dockerfile](docker/dockerfile.md)
 * [Building](docker/building.md)
 
+## BUILDING YOUR OWN
+
+* [Understanding the Basics](building-your-own/understanding-the-basics.md)
+
