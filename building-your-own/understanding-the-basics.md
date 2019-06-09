@@ -37,7 +37,9 @@ await glob(`${ currentPath }/node_modules/@autobot/module-*`, (err: any, command
 
 ### The Module
 
-A module consists of an `index.ts`that exports your command classes such as:
+A module consists of an `index.ts`that exports your command class\(es\) and extends [CommandBase](https://github.com/autobots-rocks/autobot-common/blob/master/src/Common/CommandBase.ts). Each module is required to have a `public run(command: CommandParser)`method which is invoked by the underlying [Bot.ts](https://github.com/autobots-rocks/autobot-common/blob/master/src/Common/Bot.ts) when a command matches your `name` parameter. 
+
+Here is an example of a simple test command which is invoked with you type `>test` in your discord servers channel:
 
 {% code-tabs %}
 {% code-tabs-item title="https://github.com/autobots-rocks/autbot-module-test/blob/master/src/index.ts" %}
