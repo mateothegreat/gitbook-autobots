@@ -1,5 +1,7 @@
 # Understanding the Basics
 
+![](../.gitbook/assets/image%20%281%29.png)
+
 ### The Bootstrap
 
 The autobots is a framework built on dynamically loading "modules". On startup the bot class checks for modules in the `node_modules/@autobot` directory that starts with `module-*`.
