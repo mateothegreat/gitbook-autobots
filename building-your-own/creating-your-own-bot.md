@@ -10,13 +10,16 @@ description: .env configuration
 
 First we need to create a new directory and initialize our node package:
 
-```text
-mkdir -p testbot/src
-cd testbot
-npm init
-npm install -D typescript
-npm install @autobot/common discord.js
+{% code-tabs %}
+{% code-tabs-item title="Workspace Directory" %}
+```bash
+$ mkdir testbot
+$ cd testbot
+$ npm init
+$ npm install @autobot/common discord.js
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Getting ready to create your own command modules requires a short bit of setup. We need to initialize our node package, install a few packages and create a `src/` directory as follows.
 
@@ -31,8 +34,6 @@ drwxr-xr-x  289 yomateod  staff      9248 Jun  8 18:12 node_modules
 -rw-r--r--    1 yomateod  staff     99150 Jun  8 18:12 package-lock.json
 -rw-r--r--    1 yomateod  staff       681 Jun  8 18:12 package.json
 drwxr-xr-x    5 yomateod  staff       160 Jun  2 13:40 src
--rw-r--r--    1 yomateod  staff       343 May 27 08:23 tsconfig.json
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
