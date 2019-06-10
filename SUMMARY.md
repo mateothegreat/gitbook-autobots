@@ -29,5 +29,7 @@
 
 * [Understanding the Basics](building-your-own/understanding-the-basics.md)
 * [The CommandParser Object](building-your-own/the-commandparser-object.md)
+* [Creating your own Module](building-your-own/creating-your-own-module.md)
 * [Creating your own Bot](building-your-own/creating-your-own-bot.md)
+* [Publishing your node module](building-your-own/publishing-your-node-module.md)
 
