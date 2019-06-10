@@ -28,4 +28,5 @@
 ## BUILDING YOUR OWN
 
 * [Understanding the Basics](building-your-own/understanding-the-basics.md)
+* [The CommandParser Object](building-your-own/the-commandparser-object.md)
 
