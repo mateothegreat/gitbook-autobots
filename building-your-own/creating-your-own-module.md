@@ -1,5 +1,7 @@
 # Creating your own Module
 
+![](../.gitbook/assets/image.png)
+
 ## tsconfig.json
 
 We need to tell the typescript command `tsc` how to compile our project. Create the following file in your project root and name it `tsconfig.json`:
