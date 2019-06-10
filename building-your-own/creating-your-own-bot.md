@@ -6,18 +6,27 @@ description: .env configuration
 
 ## Development Environment
 
+### Setting up your node module
+
+First we need to create a new directory and initialize our node package:
+
+```text
+mkdir -p testbot/src
+cd testbot
+npm init
+npm install -D typescript
+npm install @autobot/common discord.js
+```
+
 Getting ready to create your own command modules requires a short bit of setup. We need to initialize our node package, install a few packages and create a `src/` directory as follows.
 
 {% code-tabs %}
 {% code-tabs-item title="Directory Structure" %}
 ```typescript
-Matthews-MacBook-Pro-178 in ~/workspace/work/autobots/autobot-docsbot
+Matthews-MacBook-Pro-178 in ~/workspace/work/testbot
 ± |master U:1 ✗| → ls -la
 
 -rw-r--r--    1 yomateod  staff       314 Jun  4 22:05 .env
-drwxr-xr-x   15 yomateod  staff       480 Jun  9 19:58 .git
--rw-r--r--    1 yomateod  staff        36 Jun  2 16:04 .gitignore
-drwxr-xr-x    9 yomateod  staff       288 Jun  2 13:53 dist
 drwxr-xr-x  289 yomateod  staff      9248 Jun  8 18:12 node_modules
 -rw-r--r--    1 yomateod  staff     99150 Jun  8 18:12 package-lock.json
 -rw-r--r--    1 yomateod  staff       681 Jun  8 18:12 package.json
@@ -27,16 +36,6 @@ drwxr-xr-x    5 yomateod  staff       160 Jun  2 13:40 src
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
-
-### Setting up your node module
-
-First we need to create a new directory and initialize our node package:
-
-```text
-npm init
-npm install -D typescript
-npm install @autobot/common discord.js
-```
 
 ### Configuration
 
