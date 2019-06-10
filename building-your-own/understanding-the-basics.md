@@ -9,7 +9,7 @@ The autobots is a framework built on dynamically loading "modules". On startup t
 {% code-tabs %}
 {% code-tabs-item title="https://github.com/autobots-rocks/autobot-common/blob/master/src/Common/Bot.ts\#L110" %}
 ```typescript
- ...
+...
 await glob(`${ currentPath }/node_modules/@autobot/module-*`, (err: any, commands: any) => {
 
     commands.map((command: any) => {
@@ -19,18 +19,7 @@ await glob(`${ currentPath }/node_modules/@autobot/module-*`, (err: any, command
         commands.map((command: CommandBase) => require(command.toString()));
 
     });
-    
-    //
-    // (optionaly) Connect to database
-    //
-    if (process.env.MYSQL_HOST && this.entities.length > 0) {
-
-        DB.connect();
-
-    }
-
-    Logger.log('Bot Started');
-
+    ...
 });
 ...
 ```
